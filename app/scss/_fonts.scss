@@ -1,0 +1,36 @@
+//&display=swap....&subset=cyrilicc-ext
+//Montserrat
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:regular,500,700);
+
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/ttf/geometria-bold.ttf') format('truetype'), url('../fonts/woff/geometria-bold.woff') format('woff'), url('../fonts/svg/geometria-bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/ttf/geometria-extrabold.ttf') format('truetype'), url('../fonts/woff/geometria-extrabold.woff') format('woff'), url('../fonts/svg/geometria-extrabold.svg') format('svg');
+    font-weight: 800;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/ttf/geometria-medium.ttf') format('truetype'), url('../fonts/woff/geometria-medium.woff') format('woff'), url('../fonts/svg/geometria-medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Geometria';
+    src: url('../fonts/ttf/geometria-heavy.ttf') format('truetype'), url('../fonts/woff/geometria-heavy.woff') format('woff'), url('../fonts/svg/geometria-heavy.svg') format('svg');
+    font-weight: 900;
+    font-style: normal; 
+}
+   //Шрифт по умолчанию
+
+$fontStart: 'Geometria';
+$fontNoto: 'Noto Sans';

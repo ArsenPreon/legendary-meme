@@ -1,0 +1,89 @@
+
+@media (max-width: 992px){
+    .menu{
+        &__burger{
+        display: block;
+        position: relative;
+        top: 1px;
+        width: 25px;
+        height: 20px;    
+        z-index: 3;
+        cursor: pointer;
+        margin-bottom: 10px;
+        margin-right: 15px;
+        div{
+            transition: all .5s ease 0s;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                transition: all .5s ease 0s;
+                width: 56px;
+                height: 56px;
+                background-color: #E7E5DF;
+                border-radius: 50%;
+                z-index: -1;
+                top: 50%;
+                left: 50%;
+                transform: translate(-52%, -35%);
+            }
+        }
+        }
+        &__burger::before,
+        &__burger::after {
+            content: '';
+            position: absolute;
+            background-color: #000;
+            width: 100%;
+            height: 2px;
+            transition: transform .4s ease;
+        }
+        &__burger::before{
+            top: 0;
+        }
+        &__burger::after{
+            bottom: 0;
+        }
+        &__burger span{
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+            pointer-events: none;
+        }
+        &__burger._active::before{
+            transform: rotate(45deg);
+            top: 9px;
+            width: 34px;
+            left: -4px;
+            background-color: #fff;
+        }
+         &__burger._active::after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+            width: 34px;
+            left: -4px;
+            background-color: #fff;
+        }
+        &__burger._active span{
+            display: none;
+        }
+        &__burger._active div{
+            &::before{
+                background-color: rgba(36,21,21,.8);
+            }
+
+        }
+        
+    }
+    
+}      
+@media (min-width: 694px) {
+    .menu{
+        &__burger{
+            display: none;
+        }
+    }
+};

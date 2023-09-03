@@ -1,0 +1,225 @@
+@import "vars";
+@import "mixins";
+
+
+._container {
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+._ibg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+    
+._ibg img{
+
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.marusya{
+    
+    &__content {
+        background: rgba(36, 21, 21, 0.8);
+        backdrop-filter: blur(22px);
+        border-radius: 72px;
+        display: flex;
+        align-items: center;
+        column-gap: 27px;
+        padding: 8px;
+        max-width: 868px;
+        @media(max-width: 910px){
+            @include adaptive-column-gap910-580(28, 0);
+        };
+        @media (max-width: 705px) {
+            border-radius: 40px;
+        };
+        @media (max-width: 580px) {
+            flex-direction: column;
+            row-gap: 15px;
+            padding: 12px;
+        };
+    }
+    &__content-works{
+        @media (max-width: 1202px) {
+            column-gap: 8px;
+        };                         /*block*/
+        @media (max-width: 1167px) {
+            flex-direction: column;
+            border-radius: 40px;
+            max-width: 440px;
+            padding: 13px;
+            .marusya__info-title{
+                margin-top: 9px;
+            }
+            .marusya__info-texts{
+                text-align: center;
+            }
+            .marusya__info-title{
+                transform: translateX(-14px)
+            }
+            .marusya__info{
+                column-gap: 0px
+            }
+            .marusya__btn{
+                font-size: 24px;
+            }
+        };
+        @media (max-width: 860px) {
+            row-gap: 0px;
+            .marusya__btn{
+                width: 100%;
+            }
+        };
+        @media (max-width: 485px) {
+            .marusya__btn-1{
+                display: none;
+            }
+            .marusya__info-text-1{
+                @media (max-width: 485px) {
+                    display: none;
+                };
+            }
+            .marusya__info-text-2{
+                @media (min-width: 486px) {
+                    display: none;
+                };
+            }
+            .marusya__info-texts{
+                text-align: left;
+                transform: translate(14px)
+            }
+            .marusya__info-title{
+                transform: translate(0px)
+            }
+        };
+    }
+    &__content-organization{
+        @media (max-width: 648px) {
+            flex-direction: column;
+        };
+        @media (max-width: 815px) {
+            border-radius: 26px;
+        };
+        @media (max-width: 650px) {
+            flex-direction: column;
+            .marusya__btn-1{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        };
+        @media (max-width: 580px) {
+            row-gap: 0px;
+        };
+        @media (max-width: 380px) {
+            border-radius: 42px;
+        };
+        @media (max-width: 409px) {
+            .marusya__info-title{
+                margin-top: 5px;
+            }
+        };
+    }
+    
+    &__btn {
+        font-weight: 700;
+        font-size: 24px;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        padding-right: 32px;
+        padding-left: 32px;
+        white-space: nowrap;
+        background: linear-gradient(180deg, #FB1F2D 0%, #CE0915 100%);
+        border-radius: 64px;
+        transition: all .5s ease 0s;
+        color: #FFFFFF;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1);
+            }
+        }
+        @media (max-width: 580px) {
+            width: 100%;
+            border-radius: 72px;
+        };
+        @media (max-width: 650px) {
+            white-space: normal;
+        };
+        @media(max-width: $maxWidthContainer){
+            @include adaptive-padding-topContainer-320(21, 17);
+            @include adaptive-padding-bottomContainer-320(21, 17);
+            @include adaptive-padding-rightContainer-320(32, 5);
+            @include adaptive-padding-leftContainer-320(32, 5);
+            @include adaptive-font(24, 18);
+        };
+    }
+    &__btn-1{
+        @media (max-width: 380px) {
+            display: none;
+        }
+    }
+    &__btn-380{
+        @media (min-width: 381px) {
+            display: none;
+        };
+    }
+    &__btn-485{
+        @media (min-width: 486px) {
+            display: none;
+        };
+    }
+    
+    &__info {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        margin-right: 18px;
+    }
+    
+    &__info-icon {
+        color: #FFD53F;
+        font-size: 40px;
+    }
+    
+    &__info-texts {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__info-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #fff;    
+        margin-bottom: 7px;
+    }
+    
+    &__info-text {
+        color: #DCD9D9;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+// <div class="marusya__content">
+//     <button class="marusya__btn marusya__btn-1">Рассчитать стоимость шкафа</button>
+//     <button class="marusya__btn marusya__btn-380">Заказать замер</button>
+//     <div class="marusya__info">
+//         <div class="marusya__info-icon icon-lightning"></div>
+//         <div class="marusya__info-texts">
+//             <div class="marusya__info-title">Скидка 15% при заказе сегодня</div>
+//             <div class="marusya__info-text">До окончания акции 2 часа 12 минут 32 секунды</div>
+//         </div>
+//     </div>
+// </div>

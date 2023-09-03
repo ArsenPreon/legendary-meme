@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+<div class="void"></div>
+<div class="wrapper">
+    <div class="application">
+        <h3 class="application__title">Заявка отправлена</h3>
+        <div class="application__content content__application">
+            <div class="content__application-left">
+                <div class="content__application-icon">
+                    <img src="images/application/zap.png" alt="">
+                </div>
+                <div class="content__application-text-container">
+                    <div class="content__application-title">Мы свяжемся с вами через</div>
+                    <div class="content__application-subtitle">1 минуту 2 секунды</div>
+                </div>
+            </div>
+            <div class="content__application-right">
+                <div class="content__application-promo-text">Скидка 15% по промокоду</div>
+                <div class="content__application-promo">SUMMER23</div>
+            </div>
+        </div>
+    </div>
+    <img class="img__decor" src="images/project/img.png" alt="">
+    <div class="order__popup-shell">
+        <form action="sending" method="get" class="order__popup">
+            <div class="order__popup-close">
+                <div class="order__popup-close-top"></div>
+                <div class="order__popup-close-bottom"></div>
+            </div>
+            <h3 class="order__popup-title">Пригласить замерщика</h3>
+            <div class="order__popup-inputs">
+                <div class="order__popup-inputs-container">
+                    <div class="order__popup-input-item">
+                        <input type="email" class="order__popup-input order__popup-input-email">
+                        <label class="order__popup-label" for="#">Ваш email</label>
+                        <span class="order__popup-incorrect order__popup-incorrect-1">Неверный email</span>
+                    </div>
+                    <div class="order__popup-input-item">
+                        <input type="text" class="order__popup-input order__popup-input-name">
+                        <label class="order__popup-label" for="#">Ваше имя</label>
+                        <span class="order__popup-incorrect order__popup-incorrect-2">Неверное имя</span>
+                    </div>
+                    
+                </div>
+                <div class="order__popup-inputs-container">
+                    <div class="order__popup-input-item">
+                        <input type="tel" class="order__popup-input order__popup-input-tel">
+                        <label class="order__popup-label" for="#">Ваш телефон</label>
+                        <span class="order__popup-incorrect order__popup-incorrect-3">Неверный телефон</span>
+                    </div>
+                    <div class="order__popup-input-item">
+                        <select name="order__popup-select is-open" id="" class="order__popup-select">
+                            <option value="Вызвать замерщика">Вызвать замерщика</option>
+                            <option value="Расчитать по телефону">Расчитать по телефону</option>
+                            <option value="Проконсультировать">Проконсультировать</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                        <label class="order__popup-label" for="#">Ваш email</label>
+                    </div>
+                </div>
+            </div>
+            <div class="order__popup-connection">
+                <div class="order__popup-connection-left">
+                    <img src="images/order__popup/Zap.png" alt="" class="order__popup-connection-icon">
+                    <div class="order__popup-connection-text-container">
+                        <h5 class="order__popup-connection-title">Мы свяжемся с вами через</h5>
+                        <p class="order__popup-connection-text">2 минуты 30 секунд</p>
+                    </div>
+                </div>
+                <a class="order__popup-connection-btn _btn-order" href="#">Отправить заявку</a>
+            </div>
+        </form>
+    </div>
+    <div class="works__popup">
+        <div class="works__popup-title">Наши работы</div>
+        <img src="images/project/img-1.png" alt="" class="works__popup-img">
+        <div class="order__popup-connection">
+            <div class="order__popup-connection-left">
+                <img src="images/order__popup/Zap.png" alt="" class="order__popup-connection-icon">
+                <div class="order__popup-connection-text-container">
+                    <h5 class="order__popup-connection-title">Хотите такой же?</h5>
+                    <p class="order__popup-connection-text">Перезвоним через 2 минуты 30 секунд</p>
+                </div>
+            </div>
+            <button class="order__popup-connection-btn works__popup-btn _btn" href="#">Хочу такой же</button>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__container _container">
+                <div class="header__body">
+                    <a class="header__logo" href="#">
+                        <img src="images/header/logo.jpg" alt="header__logo">
+                    </a>
+                    <div class="header__menu menu">
+                        <div class="menu__burger">
+                            <span></span>
+                            <div></div>
+                        </div>
+                        <div class="menu__body">
+                            <a class="menu__item menu__number" href="tel:88001223445">
+                                <img src="images/header/phone.png" alt="">
+                                <div class="menu__number-number">8 800 122 34 45</div>
+                            </a>
+                            <button class="menu__item menu__btn _btn">
+                                <div class="menu__btn-text">Заказать шкаф</div>
+                                <div class="menu__btn-icon icon-arrow-right-sm-svgrepo-com-1"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="swup" class="main transition-fade">
+        <div class="intro">
+            <div class="intro__container _container">
+                <div class="intro__body">
+                    <img src="images/intro/img-2.jpg" alt="" class="intro__img">
+                    <h1 class="intro__title">Бесшумный шкаф-купе по индивидуальным размерам</h1>
+                    <p class="intro__text">Получите дизайн-проект и стоимость шкафа,пройдя тест из 5 вопросов.</p>
+                    <div class="marusya__content">
+                        <button class="marusya__btn marusya__btn-1 _btn">Рассчитать стоимость шкафа</button>
+                        <button class="marusya__btn marusya__btn-380 _btn">Заказать замер</button>
+                        <div class="marusya__info">
+                            <div class="marusya__info-icon icon-lightning"></div>
+                            <div class="marusya__info-texts">
+                                <div class="marusya__info-title">Скидка 15% при заказе сегодня</div>
+                                <div class="marusya__info-text">До окончания акции 2 часа 12 минут 32 секунды</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="points">
+            <div class="points__container _container">
+                <div class="points__body">
+                    <div class="points__items">
+                        <div class="points__item">
+                            <img src="images/points/clock.png" alt="points__icon" class="points__icon">
+                            <div class="points__title">Быстрый заказы и исполнение</div>
+                            <div class="points__ticks points__ticks-1">
+                                <div class="points__tick-container">
+                                    <img src="images/points/Tick.png" alt="" class="points__tick-img">
+                                    <div class="points__tick-text">Своевременная подача машин на склады</div>
+                                </div>
+                                <div class="points__tick-container">
+                                    <img src="images/points/Tick.png" alt="" class="points__tick-img">
+                                    <div class="points__tick-text">Четкий график перевозки</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="points__item">
+                            <img src="images/points/medal.png" alt="points__icon" class="points__icon">
+                            <div class="points__title">Гарантия 12 месяцев</div>
+                            <div class="points__ticks points__ticks-2">
+                                <div class="points__tick-container">
+                                    <img src="images/points/Tick.png" alt="" class="points__tick-img">
+                                    <div class="points__tick-text">Информирование об изменениях статуса</div>
+                                </div>
+                                <div class="points__tick-container">
+                                    <img src="images/points/Tick.png" alt="" class="points__tick-img">
+                                    <div class="points__tick-text">Мы сообщаем о любых изменениях</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="points__item">
+                            <img src="images/points/shield.png" alt="points__icon" class="points__icon">
+                            <div class="points__title">Бесплатный замер и дизайн-проект</div>
+                            <div class="points__ticks">
+                                <div class="points__tick-container">
+                                    <img src="images/points/Tick.png" alt="" class="points__tick-img">
+                                    <div class="points__tick-text">Соблюдение условий хранения</div>
+                                </div>
+                                <div class="points__tick-container">
+                                    <img src="images/points/Tick.png" alt="" class="points__tick-img">
+                                    <div class="points__tick-text">Экспедирование грузов</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="works">
+            <div class="works__container _container">
+                <div class="works__body">
+                    <h2 class="works__title">Наши работы</h2>
+                    <div class="works__items">
+                        <div class="works__item works__item-1">
+                            <div class="works__images">
+                                <a class="works__img-item" src="#">
+                                    <img src="images/works/img.png" alt="" class="works__img">
+                                    <button class="works__img-btn">
+                                        <img src="images/works/fire.png" alt="" class="works__img-btn-fire">
+                                        <div class="works__img-btn-text">Хочу такой же</div>
+                                    </button>
+                                </a>
+                                <a class="works__img-item" src="#">
+                                    <img src="images/works/img.png" alt="" class="works__img">
+                                    <button class="works__img-btn">
+                                        <img src="images/works/fire.png" alt="" class="works__img-btn-fire">
+                                        <div class="works__img-btn-text">Хочу такой же</div>
+                                    </button>
+                                </a>
+                                <a class="works__img-item works__img-item-del" src="#">
+                                    <img src="images/works/img.png" alt="" class="works__img">
+                                    <button class="works__img-btn">
+                                        <img src="images/works/fire.png" alt="" class="works__img-btn-fire">
+                                        <div class="works__img-btn-text">Хочу такой же</div>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="works__item works__middle">
+                            <a class="works__img-item works__img-item-del" src="#">
+                                <img src="images/works/img.png" alt="" class="works__img works__img-middle">
+                                <button class="works__img-btn">
+                                    <img src="images/works/fire.png" alt="" class="works__img-btn-fire">
+                                    <div class="works__img-btn-text">Хочу такой же</div>
+                                </button>
+                            </a>
+                            <div class="works__item-content">
+                                <div class="works__item-title">Сделаем шкаф как на любой из картинок</div>
+                                <div class="works__item-text">Получите дизайн-проект и стоимость шкафа, пройдя тест из 5 вопросов.</div>
+                                <div class="marusya__content marusya__content-works">
+                                    <button class="marusya__btn marusya__btn-1 _btn">Рассчитать стоимость шкафа</button>
+                                    <button class="marusya__btn marusya__btn-485 _btn">Заказать замер</button>
+                                    <div class="marusya__info">
+                                        <div class="marusya__info-icon icon-lightning"></div>
+                                        <div class="marusya__info-texts">
+                                            <div class="marusya__info-title">Скидка 15% при заказе сегодня</div>
+                                            <div class="marusya__info-text">До <span class="marusya__info-text-1">окончания</span> <span class="marusya__info-text-2">конца</span> акции 2 часа 12 минут 32 секунды</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="works__item works__item-2">
+                            <div class="works__images">
+                                <a class="works__img-item works__img-item-del" src="#">
+                                    <img src="images/works/img.png" alt="" class="works__img">
+                                    <button class="works__img-btn">
+                                        <img src="images/works/fire.png" alt="" class="works__img-btn-fire">
+                                        <div class="works__img-btn-text">Хочу такой же</div>
+                                    </button>
+                                </a>
+                                <a class="works__img-item" src="#">
+                                    <img src="images/works/img.png" alt="" class="works__img">
+                                    <button class="works__img-btn">
+                                        <img src="images/works/fire.png" alt="" class="works__img-btn-fire">
+                                        <div class="works__img-btn-text">Хочу такой же</div>
+                                    </button>
+                                </a>
+                                <a class="works__img-item" src="#">
+                                    <img src="images/works/img.png" alt="" class="works__img">
+                                    <button class="works__img-btn">
+                                        <img src="images/works/fire.png" alt="" class="works__img-btn-fire">
+                                        <div class="works__img-btn-text">Хочу такой же</div>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="organization">
+            <div class="organization__container _container">
+                <div class="organization__body">
+                    <div class="organization__title">Грамотная организация</div>
+                    <div class="organization__slider">
+                        <div class="organization__swiper swiper">
+                            <div class="organization__swiper-wrapper swiper-wrapper">
+                                <div class="organization__swiper-slide swiper-slide organization__slide">
+                                    <img src="images/organization/1.jpg" alt="" class="organization__slide-img">
+                                </div>
+                                <div class="organization__swiper-slide swiper-slide organization__slide">
+                                    <img src="images/organization/1.jpg" alt="" class="organization__slide-img">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="organization__controlls">
+                            <div class="organization__arrow organization__arrow-left icon-arrow-down"></div>
+                            <img src="images/organization/hand.png" alt="" class="organization__hand">
+                            <div class="organization__arrow organization__arrow-right icon-arrow-down"></div>
+                        </div>
+                    </div>
+                    <div class="organization__img">
+                        <img src="images/organization/img.png" alt="">
+                    </div>
+                    <div class="organization__content">
+                        <div class="organization__item-title">Закажите бесплатный замер сегодня</div>
+                        <div class="marusya__content marusya__content-organization">
+                            <button class="marusya__btn marusya__btn-1 _btn">Рассчитать стоимость шкафа</button>
+                            <button class="marusya__btn marusya__btn-380 _btn">Заказать замер</button>
+                            <div class="marusya__info">
+                                <div class="marusya__info-icon icon-lightning"></div>
+                                <div class="marusya__info-texts">
+                                    <div class="marusya__info-title">Скидка 15% при заказе сегодня</div>
+                                    <div class="marusya__info-text">До окончания акции 2 часа 12 минут 32 секунды</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="material">
+            <div class="material__container _container">
+                <div class="material__body">
+                    <div class="material__title">экологичные материалы</div>
+                    <div class="material__inner">
+                        <div class="material__items">
+                            <div class="material__item item__material">
+                                <div class="item__material-title">ДСП</div>
+                                <img src="images/material/1.png" alt="" class="item__material-img item__material-img-1"> 
+                                <div class="item__material-choice-container item__material-choice-container-1">
+                                    <div class="item__material-choice-item item__material-choice-item-1 _active1" data-items="1">
+                                        <img src="images/material/material-1.png" alt="">
+                                    </div>
+                                    <div class="item__material-choice-item item__material-choice-item-1" data-items="2">
+                                        <img src="images/material/material-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="item__material-info">
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Низкая стоимость</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Широкий выбор цветов</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                    </div>
+                                </div>
+                                <div class="item__material-btn-container">
+                                    <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                    <div class="item__material-btn-text">Самый экономичный</div>
+                                </div>
+                            </div>
+                            <div class="material__item item__material">
+                                <div class="item__material-title">МДФ</div>
+                                <img src="images/material/2.png" alt="" class="item__material-img item__material-img-2"> 
+                                <div class="item__material-choice-container item__material-choice-container-2">
+                                    <div class="item__material-choice-item item__material-choice-item-2 _active2" data-item2="3">
+                                        <img src="images/material/material-3.png" alt=""">
+                                    </div>
+                                    <div class="item__material-choice-item item__material-choice-item-2" data-item2="4">
+                                        <img src="images/material/material-4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="item__material-info">
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Низкая стоимость</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Широкий выбор цветов</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                    </div>
+                                </div>
+                                <div class="item__material-btn-container">
+                                    <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                    <div class="item__material-btn-text">Самый прочный</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="material__items">
+                            <div class="material__item item__material">
+                                <div class="item__material-title">ЛДСП</div>
+                                <img src="images/material/3.png" alt="" class="item__material-img item__material-img-3"> 
+                                <div class="item__material-choice-container item__material-choice-container-3">
+                                    <div class="item__material-choice-item item__material-choice-item-3 _active3" data-item3="5">
+                                        <img src="images/material/material-4.png" alt="">
+                                    </div>
+                                    <div class="item__material-choice-item item__material-choice-item-3" data-item3="6">
+                                        <img src="images/material/material-5.png" alt="">
+                                    </div>
+                                    <div class="item__material-choice-item item__material-choice-item-3" data-item3="7">
+                                        <img src="images/material/material-6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="item__material-info">
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Низкая стоимость</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Широкий выбор цветов</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                    </div>
+                                </div>
+                                <div class="item__material-btn-container">
+                                    <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                    <div class="item__material-btn-text">Самый экологичный</div>
+                                </div>
+                            </div>
+                            <div class="material__item item__material">
+                                <div class="item__material-title">Шпон</div>
+                                <img src="images/material/4.png" alt="" class="item__material-img item__material-img-4"> 
+                                <div class="item__material-choice-container item__material-choice-container-4">
+                                    <div class="item__material-choice-item item__material-choice-item-4 _active4" data-item4="8">
+                                        <img src="images/material/material-6.png" alt="">
+                                    </div>
+                                    <div class="item__material-choice-item item__material-choice-item-4" data-item4="9">
+                                        <img src="images/material/material-7.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="item__material-info">
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Низкая стоимость</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Широкий выбор цветов</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                    </div>
+                                    <div class="item__material-info-item">
+                                        <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                        <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                    </div>
+                                </div>
+                                <div class="item__material-btn-container">
+                                    <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                    <div class="item__material-btn-text">Самый бесшумный</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="material__slider__controlls-slider">
+                        <div class="material__controlls-item-arrows">
+                            <div class="material__controlls-item-arrow material__controlls-item-arrow-prev icon-arrow-down"></div>
+                            <div class="material__controlls-item-arrow material__controlls-item-arrow-next icon-arrow-down"></div>
+                        </div>
+                        <div class="material__slider__controlls__swiper swiper">
+                            <div class="material__slider__controlls-swiper-wrapper swiper-wrapper">
+                                <div class="material__slider__controlls-swiper-slide swiper-slide">
+                                    <div class="material__slider__controlls-swiper-slide-item material__controlls-item">
+                                        <div class="material__controlls-item-title">ДСП</div>
+                                    </div>
+                                </div>
+                                <div class="material__slider__controlls-swiper-slide swiper-slide">
+                                    <div class="material__slider__controlls-swiper-slide-item material__controlls-item">
+                                        <div class="material__controlls-item-title">МДФ</div>
+                                    </div>
+                                </div>
+                                <div class="material__slider__controlls-swiper-slide swiper-slide">
+                                    <div class="material__slider__controlls-swiper-slide-item material__controlls-item">
+                                        <div class="material__controlls-item-title">ЛДСП</div>
+                                    </div>
+                                </div>
+                                <div class="material__slider__controlls-swiper-slide swiper-slide">
+                                    <div class="material__slider__controlls-swiper-slide-item material__controlls-item">
+                                        <div class="material__controlls-item-title">Шпон</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="material__slider">
+                        <div class="material__swiper swiper">
+                            <div class="material__swiper-wrapper swiper-wrapper">
+                                <div class="material__swiper-slide swiper-slide material__slide">
+                                    <div class="material__item item__material">
+                                        <img src="images/material/1.png" alt="" class="item__material-img item__material-img-1"> 
+                                        <div class="item__material-choice-container item__material-choice-item-1">
+                                            <div class="item__material-choice-item item__material-choice-item-1 _active1" data-items="1">
+                                                <img src="images/material/material-1.png" alt="">
+                                            </div>
+                                            <div class="item__material-choice-item item__material-choice-item-1" data-items="2">
+                                                <img src="images/material/material-2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item__material-info">
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Низкая стоимость</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Широкий выбор цветов</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__material-btn-container">
+                                            <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                            <div class="item__material-btn-text">Самый экономичный</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="material__swiper-slide swiper-slide material__slide">
+                                    <div class="material__item item__material">
+                                        <img src="images/material/2.png" alt="" class="item__material-img item__material-img-2"> 
+                                        <div class="item__material-choice-container item__material-choice-container-2">
+                                            <div class="item__material-choice-item item__material-choice-item-2 _active2" data-item2="3">
+                                                <img src="images/material/material-3.png" alt=""">
+                                            </div>
+                                            <div class="item__material-choice-item item__material-choice-item-2" data-item2="4">
+                                                <img src="images/material/material-4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item__material-info">
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Низкая стоимость</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Широкий выбор цветов</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__material-btn-container">
+                                            <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                            <div class="item__material-btn-text">Самый прочный</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="material__swiper-slide swiper-slide material__slide">
+                                    <div class="material__item item__material">
+                                        <img src="images/material/3.png" alt="" class="item__material-img item__material-img-3"> 
+                                        <div class="item__material-choice-container item__material-choice-container-3">
+                                            <div class="item__material-choice-item item__material-choice-item-3 _active3" data-item3="5">
+                                                <img src="images/material/material-4.png" alt="">
+                                            </div>
+                                            <div class="item__material-choice-item item__material-choice-item-3" data-item3="6">
+                                                <img src="images/material/material-5.png" alt="">
+                                            </div>
+                                            <div class="item__material-choice-item item__material-choice-item-3" data-item3="7">
+                                                <img src="images/material/material-6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item__material-info">
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Низкая стоимость</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Широкий выбор цветов</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__material-btn-container">
+                                            <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                            <div class="item__material-btn-text">Самый экологичный</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="material__swiper-slide swiper-slide material__slide">
+                                    <div class="material__item item__material">
+                                        <img src="images/material/4.png" alt="" class="item__material-img item__material-img-4"> 
+                                        <div class="item__material-choice-container item__material-choice-container-4">
+                                            <div class="item__material-choice-item item__material-choice-item-4 _active4" data-item4="8">
+                                                <img src="images/material/material-6.png" alt="">
+                                            </div>
+                                            <div class="item__material-choice-item item__material-choice-item-4" data-item4="9">
+                                                <img src="images/material/material-7.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item__material-info">
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Низкая стоимость</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Устойчивость к температурным и влаговым изменениям</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Широкий выбор цветов</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Простота в чистке и высокая прочность</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Затрудненная фрезеровка из-за высокой жесткости плит</div>
+                                            </div>
+                                            <div class="item__material-info-item">
+                                                <img src="images/material/smile-glad.png" alt="" class="item__material-smile">
+                                                <div class="item__material-text">Ограниченные возможности для создания сложных узоров на фасадах</div>
+                                            </div>
+                                        </div>
+                                        <div class="item__material-btn-container">
+                                            <button class="item__material-btn">Заказать шкаф из ДСП</button>
+                                            <div class="item__material-btn-text">Самый бесшумный</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="reviews__container _container">
+                <div class="reviews__body">
+                    <h2 class="reviews__title">Ваши отзывы</h2>
+                    <div class="reviews__inner">
+                        <div class="reviews__items">
+                            <div class="reviews__item item__reviews">
+                                <div>Анастасия</div>
+                                <p>Увидели шкаф-купе у наших знакомых – нам понравилось, к тому же были наслышаны много хорошего о компании Маруся, поэтому даже не стали сомневаться при заказе в выборе компании. Нам также понравилось, что есть богатый выбор расцветок, из которых мы смогли выбрать понравившийся нам цвет, идеально подходящий под цвет наших обоев. </p>
+                            </div>
+                            <div class="reviews__item item__reviews item__reviews-del">
+                                <div>Роман</div>
+                                <p>Делали ремонт в новой квартире и решили установить шкаф-купе в нишу в прихожей. Хотелось сделать шкаф «под себя», чтобы было удобно пользоваться. Заказали шкаф в компании undefined и очень довольны. Порадовала оперативность работы. В итоге шкаф встал идеально, мы очень довольны :)</p>
+                            </div>
+                            <div class="reviews__item item__reviews item__reviews-del" data-da=".reviews__items-del, 1024, 1">
+                                <div>Антон</div>
+                                <p>Очень здорово получилось! Мы заказывали шкаф-купе несколько лет назад. До сих пор очень довольны тем, что предпочли шкаф-купе обычному шкафу, и тем, что обратились в вашу компанию. Во-первых, за последние годы добавилось вещей, поэтому экономия места в квартире стала еще более актуальной. Во-вторых, мы многим нашим друзьям рекомендовали компанию и все всегда оставались довольны.</p>
+                            </div>
+                        </div>
+                        <div class="reviews__items reviews__items-middle" data-da=".reviews__inner, 1024, 4">
+                            <div class="reviews__item item__reviews item__reviews-middle item__reviews">
+                                <div>Григорий</div>
+                                <p>Конструкция нашего шкафа–купе была достаточно сложной, нам хотелось, что бы дверь была закреплена под натяжной потолок, на что многие компании не соглашались. И только в компании undefined учли все наши пожелания и закрепили дверь нам на рельсы под натяжной потолок, именно так, как мы и хотели.</p>
+                            </div>
+                            <div class="reviews__item item__reviews item__reviews-form">
+                                <h3 class="item__reviews-form-title">Сделаем вам шкаф за 4 дня</h3>
+                                <div class="item__reviews-form-bullets reviews__bullets">
+                                    <div class="reviews__bullet">
+                                        <img src="images/reviews/Tick.svg" alt="" class="reviews__bullet-tick">
+                                        <div class="reviews__bullet-text">Гарантия с выгодой</div>
+                                    </div>
+                                    <div class="reviews__bullet">
+                                        <img src="images/reviews/Tick.svg" alt="" class="reviews__bullet-tick">
+                                        <div class="reviews__bullet-text">Отвечаем за качество</div>
+                                    </div>
+                                    <div class="reviews__bullet">
+                                        <img src="images/reviews/Tick.svg" alt="" class="reviews__bullet-tick">
+                                        <div class="reviews__bullet-text">Быстрее конкуретов</div>
+                                    </div>
+                                </div>
+                                <button class="item__reviews-form-btn _btn">Оформить заявку</button>
+                                <div class="item__reviews-form-tel-container">
+                                    <img src="images/reviews/call.png" alt="" class="item__reviews-form-tel-icon">
+                                    <a href="tel:88001223445" class="item__reviews-form-tel">8 800 122 34 45</a>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__items">
+                            <div class="reviews__item item__reviews item__reviews-del">
+                                <div>Данил</div>
+                                <p>Увидели шкаф-купе у наших знакомых – нам понравилось, к тому же были наслышаны много хорошего о компании undefined, поэтому даже не стали сомневаться при заказе в выборе компании. Нам также понравилось, что есть богатый выбор расцветок, из которых мы смогли выбрать понравившийся нам цвет, идеально подходящий под цвет наших обоев. Еще понравилась рельефная структура ЛДСП, которая достаточно интересно смотрится.</p>
+                            </div>
+                            <div class="reviews__item item__reviews item__reviews-del">
+                                <div>Иван</div>
+                                <p>Очень здорово получилось! Мы заказывали шкаф-купе несколько лет назад. До сих пор очень довольны тем, что предпочли шкаф-купе обычному шкафу, и тем, что обратились в вашу компанию. За последние годы добавилось вещей, поэтому экономия места в квартире стала еще более актуальной.</p>
+                            </div>
+                            <div class="reviews__item item__reviews item__reviews-del" data-da=".reviews__items-del, 1024, 2">
+                                <div>Олег</div>
+                                <p>Не в первый раз заказываем здесь шкаф, результатом очень довольны всё сделали так как было обещано, устанавливали очень весёлые ребята). Будем рекомендовать данную компанию</p>
+                            </div>
+                        </div>
+                        <div class="reviews__items reviews__items-del"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="questions">
+            <div class="questions__container _container">
+                <div class="questions__body">
+                    <div class="questions__title">Вопросы и ответы</div>
+                    <div class="questions__accardion" data-spollers data-one-spoller data-spollers-speed="700">
+                        <div class="questions__accardion-item accardion__questions-item">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">А правда, что вашу мебель пилят зэки?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Да, это правда. Мы нанимаем на работу только людей с судимостью. Очень здорово получилось! Мы заказывали шкаф-купе несколько лет назад. До сих пор очень довольны тем, что предпочли шкаф-купе обычному шкафу, и тем, что обратились в вашу компанию. Во-первых, за последние годы добавилось вещей, поэтому экономия места в квартире стала еще более актуальной. Во-вторых, мы многим нашим друзьям рекомендовали компанию и все всегда оставались довольны.</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Какие типы документов предоставляют клиентам транспортные компании по завершении своих услуг?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Это товарно транспортные накладные, бухгалтерская отчетность и вся сопроводительная документация (путевой лист, экспедиторская расписка, поручение экспедитору, доверенности сторон и т.д.)</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item accardion__questions-item-3">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">По какой схеме проводится оплата услуг при безналичном расчете?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Платежи, осуществляемые без использования наличных денег, посредством перечисления денежных средств по счетам в кредитных учреждениях и зачётов взаимных требований.</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item accardion__questions-item-4">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Каковы условия оказания услуг грузчиком?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Забор груза с адреса и доставка на адрес осуществляются по графику, несколько раз в неделю. На льготную автодоставку действует специальный тариф – ваша выгода до 90%</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item">
+                            <div class="accardion__questions-item-title-container" data-spoller> 
+                                <div class="accardion__questions-item-title-title">В какую сумму обойдутся погрузка и разгрузка товара? И от чего зависит стоимость этих работ?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Данный вопрос решается в индивидуальном порядке. На конечную стоимость погрузочно-разгрузочных работ влияют разные факторы: объем груза, сложность его перемещения, затраченное грузчиками время на погрузку-разгрузку товара и т.д.</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Каковы условия оказания погрузо-разгрузочных работ?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Правила по охране труда при погрузочно-разгрузочных работах и размещении грузов (далее - Правила) устанавливают государственные нормативные требования охраны труда при выполнении погрузочно-разгрузочных работ, транспортировке, размещении и хранении грузов.</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Какие типы документов предоставляют клиентам транспортные компании по завершении своих услуг?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Если вы обратитесь в фирму с хорошей деловой репутацией, то получите с ее стороны всю надлежащую документацию. В транспортных компаниях, относящихся ответственно к своей профессиональной деятельности, после выполнения заказа клиентам предоставляется полный пакет документов.</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item accardion__questions-item-8">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Бывает ли водитель грузового автомобиля задействован в погрузке разгрузке товара?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Да, это вполне возможно. Правда, за данную услугу с клиента взимается дополнительная плата. Ее стоимость в большинстве случаев не бывает фиксированной и зависит от сложности задания. </p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item accardion__questions-item-9">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Какую ответственность несет компания-перевозчик за срыв заказа?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">Если транспортировка груза не была проведена по вине фирмы перевозчика, то она обязана выплатить грузоотправителю штраф в размере суммы, равной 20% от стоимости услуг за выполнение данного заказа. </p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Какие нормы установлены законом относительно сроков доставки?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">В обязанности фирмы перевозчика входит доставка груза по указанному грузоотправителем адресу. По прибытии транспортируемого товара на место назначения его принимает грузополучатель (о чем фиксируются данные в соответствующей документации).</p>
+                        </div>
+                        <div class="questions__accardion-item accardion__questions-item accardion__questions-item-11">
+                            <div class="accardion__questions-item-title-container" data-spoller>
+                                <div class="accardion__questions-item-title-title">Может ли водитель грузового автомобиля выполнять функции экспедитора при перевозке груза?</div>
+                                <div class="accardion__questions-item-title-icon icon-arrow-down"></div>
+                            </div>
+                            <p class="accardion__questions-item-text">В подавляющем большинстве транспортных компаний клиенту ответят на данный вопрос утвердительно. Стоимость экспедирования товара зависит от сложности перевозки и объема (количества) груза.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="measurer" style="background-image: url(images/measurer/img.png);">
+            <div class="measurer__container _container">
+                <div class="measurer__body">
+                    <div class="measurer__content">
+                        <h2 class="measurer__title">Пригласите замерщика</h2>
+                        <h3 class="measurer__subtitle">Это бесплатно, вы не обязаны заказывать.</h3>
+                        <form action="#" method="get" class="measurer__phone-body">
+                            <div class="measurer__phone-container">
+                                <img src="images/measurer/phone.svg" alt="" class="measurer__phone-icon">
+                                <div class="measurer__phone-text-container">
+                                    <span class="measurer__phone-text-text">Ваш телефон</span>
+                                    <input type="tel" name="measurer__phone" placeholder="+7 ___ ___ __ __" class="measurer__phone-phone tel">
+                                </div>
+                            </div>
+                            <button class="measurer__btn _btn">Пригласить замерщика</button>
+                        </а>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="https://unpkg.com/swup@3"></script>  
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
