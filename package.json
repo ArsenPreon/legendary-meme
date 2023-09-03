@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://arsenpreon.github.io/marusya",
   "scripts": {
-    "homepage": "https://arsenpreon.github.io/marusya"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Vadym Prokopchuk",
   "license": "ISC",
